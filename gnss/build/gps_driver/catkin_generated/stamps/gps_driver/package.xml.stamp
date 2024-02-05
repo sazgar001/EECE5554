@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gps_driver</name>
+  <version>0.0.1</version>
+  <description>The GPS driver ROS package</description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- Add any dependencies your package needs -->
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <!-- Add any run dependencies here -->
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+    <!-- This line ensures that the message files are available during runtime -->
+    <message_generation build_type="cmake" />
+  </export>
+</package>
