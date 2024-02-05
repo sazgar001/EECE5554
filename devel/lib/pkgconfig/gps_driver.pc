@@ -1,0 +1,8 @@
+prefix=/home/sakib/catkin_ws/src/gnss/devel
+
+Name: gps_driver
+Description: Description of gps_driver
+Version: 0.0.1
+Cflags: -I/home/sakib/catkin_ws/src/gnss/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs message_runtime
