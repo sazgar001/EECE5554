@@ -6,8 +6,13 @@ import pandas as pd             # Pandas for data manipulation
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 # csv and spreadsheet files had issues and require cleaning. had to look up how to clean csv files based on provided documentation.
 # Correct paths to datasets
+<<<<<<< HEAD
 occluded_ods_path = '/home/sakib/gnss/src/data/Sakib_occluded_num.ods'
 open_ods_path = '/home/sakib/gnss/src/data/Sakib_open_num.ods'
+=======
+occluded_ods_path = '/home/sakib/catkin_ws/src/gnss/src/data/Sakib_occluded_num.ods'
+open_ods_path = '/home/sakib/catkin_ws/src/gnss/src/data/Sakib_open_num.ods'
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 
 # Load the datasets using Panda library
 occluded_df = pd.read_excel(occluded_ods_path, engine='odf')  # Load the occluded dataset

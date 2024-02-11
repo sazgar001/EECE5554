@@ -2,8 +2,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Paths to the ODS files containing the data (couldnt use csv files for some reason)
+<<<<<<< HEAD
 occluded_ods_path = '/home/sakib/gnss/src/data/Sakib_occluded_num.ods'
 open_ods_path = '/home/sakib/gnss/src/data/Sakib_open_num.ods'
+=======
+occluded_ods_path = '/home/sakib/catkin_ws/src/gnss/src/data/Sakib_occluded_num.ods'
+open_ods_path = '/home/sakib/catkin_ws/src/gnss/src/data/Sakib_open_num.ods'
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 
 occluded_df = pd.read_excel(occluded_ods_path, engine='odf', usecols="H,I").dropna() # Load the occluded dataset from the specified path, selecting specific columns and dropping missing values
 open_df = pd.read_excel(open_ods_path, engine='odf', usecols="H,I").dropna() # Load the open dataset from the specified path, selecting specific columns and dropping missing values

@@ -3,7 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load the data from the ODS file or CSV files.
+<<<<<<< HEAD
 ods_file_path = '/home/sakib/gnss/src/data/Sakib_Walk.num.ods'
+=======
+ods_file_path = '/home/sakib/catkin_ws/src/gnss/src/data/Sakib_Walk.num.ods'
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 ods_data = pd.read_excel(ods_file_path, engine='odf')
 
 # Apply filtering based on the specified easting and northing ranges

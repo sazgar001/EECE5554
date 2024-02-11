@@ -32,6 +32,7 @@ def apply_coordinate_sign(coord_value, coord_dir):
         return -coord_value 
     return coord_value
 
+<<<<<<< HEAD
 def convert_to_utm(latitude, longitude):
     if -84 <= latitude <= 80 and -180 <= longitude <= 180:  # Validate coordinate range
         utm_result = utm.from_latlon(latitude, longitude)  # Perform UTM conversion
@@ -50,6 +51,8 @@ def utcToEpoch(utcTime):  # Converts UTC to epoch time
     epochTime = epochStartOfDay + totalSeconds  # Calculate epoch time by adding total seconds since midnight to the start of the day
     return [int(epochTime), int((epochTime % int(epochTime)) * 10**9)]  # Return epoch time as a list containing seconds and nanoseconds
 
+=======
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 # Function to read from serial port and publish GPS data
 def read_from_serial(serial_port_addr):
     with serial.Serial(serial_port_addr, 9600, timeout=1) as serial_port:  # Open the serial port with specified settings.
@@ -59,6 +62,10 @@ def read_from_serial(serial_port_addr):
                 if is_gpgga_present(line):  # Check if the line contains GPGGA data (GPS information).
                     publish_ros_message(line)  # Publish the line as a ROS message if it contains GPS data.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 # Publish ROS message based on GPGGA string from GPS sensor
 def publish_ros_message(gpgga_data):   # Extract data from GPGGA sentence
     parts = gpgga_data.split(',')

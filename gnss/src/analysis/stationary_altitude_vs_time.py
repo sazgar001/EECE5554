@@ -4,8 +4,13 @@ import pandas as pd  # Pandas -> data manipulation
 import numpy as np  # NumPy -> numerical operations
 
 # Load and reading the data from two CSV files and storing them in DataFrames
+<<<<<<< HEAD
 occluded_data = pd.read_csv('/home/sakib/gnss/src/data/Sakib_occluded.csv')
 open_data = pd.read_csv('/home/sakib/gnss/src/data/Sakib_open.csv')
+=======
+occluded_data = pd.read_csv('/home/sakib/catkin_ws/src/gnss/src/data/Sakib_occluded.csv')
+open_data = pd.read_csv('/home/sakib/catkin_ws/src/gnss/src/data/Sakib_open.csv')
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 
 # Function to prepare and clean the data -> referred to this link to clean csv: https://realpython.com/python-data-cleaning-numpy-pandas/
 def prepare_data(data):

@@ -2,7 +2,11 @@ cmake_minimum_required(VERSION 3.0.2)
 project(gps_driver)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
+<<<<<<< HEAD
 add_compile_options(-std=c++11)
+=======
+# add_compile_options(-std=c++11)
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -40,7 +44,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add "message_generation" and every package in MSG_DEP_SET to
 ##     find_package(catkin REQUIRED COMPONENTS ...)
 ##   * add "message_runtime" and every package in MSG_DEP_SET to
+<<<<<<< HEAD
 ##    catkin_package(CATKIN_DEPENDS message_runtime std_msgs) 
+=======
+##     catkin_package(CATKIN_DEPENDS ...)
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 ##   * uncomment the add_*_files sections below as needed
 ##     and list every .msg/.srv/.action file to be processed
 ##   * uncomment the generate_messages entry below
@@ -50,7 +58,10 @@ find_package(catkin REQUIRED COMPONENTS
  add_message_files(
     FILES
     Customgps.msg
+<<<<<<< HEAD
     Customrtk.msg
+=======
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
  )
 
 ## Generate services in the 'srv' folder
@@ -103,12 +114,19 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
+<<<<<<< HEAD
 	CATKIN_DEPENDS rospy std_msgs message_runtime)
+=======
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 #  INCLUDE_DIRS include
 #  LIBRARIES gps_driver
 #  CATKIN_DEPENDS rospy std_msgs
 #  DEPENDS system_lib
+<<<<<<< HEAD
 
+=======
+)
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 
 ###########
 ## Build ##
@@ -164,12 +182,19 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 ## Build ROS Python scripts
+<<<<<<< HEAD
 catkin_install_python(PROGRAMS
   python/standalone_driver.py
   python/rtk_driver.py  # This line ensures rtk_driver.py is included in the install
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+=======
+ catkin_install_python(PROGRAMS
+   python/standalone_driver.py
+   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+ )
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html

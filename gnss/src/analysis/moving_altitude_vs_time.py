@@ -3,7 +3,11 @@ import pandas as pd
 import numpy as np  
 
 # Load and read the CSV file
+<<<<<<< HEAD
 data = pd.read_csv('/home/sakib/gnss/src/data/Sakib_Walk.csv')
+=======
+data = pd.read_csv('/home/sakib/catkin_ws/src/gnss/src/data/Sakib_Walk.csv')
+>>>>>>> e08659b534f722c3634df382d745807097e703b7
 cleaned_data = data.dropna(subset=['%time', 'actual.altitude']) # Clean the data by dropping rows with NaN values in the '%time' or 'actual.altitude' columns
 
 # Conversion from nanoseconds to seconds and cleaning data
