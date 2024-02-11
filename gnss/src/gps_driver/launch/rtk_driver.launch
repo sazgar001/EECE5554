@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="gps_driver" type="rtk_driver.py" name="GPS_Transmit" output="screen">
+    <param name="serial_port_param" value="/dev/pts/3"/>
+  </node>
+</launch>
+
