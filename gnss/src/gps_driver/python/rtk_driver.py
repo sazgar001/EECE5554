@@ -100,7 +100,7 @@ def read_from_serial(port_address, publisher):
 
 if __name__ == "__main__":
     try:
-        publisher_0 = rospy.Publisher('GPS_Reader', Customrtk, queue_size=10)  # Initialize ROS publisher GPS_Reader 
+        publisher_0 = rospy.Publisher('/gps', Customrtk, queue_size=10)  # Initialize ROS publisher GPS_Reader 
         rospy.init_node('GPS_Transmit', anonymous=False)  # Initialize ROS node with the name 'GPS_Transmit'
         serial_port_param = rospy.get_param('~serial_port_param', '/dev/pts/6')  # Serial port address parameter from the ROS parameter server
         rospy.loginfo(f"Starting GPS_Transmit node with serial port: {serial_port_param}")  # Indicates start of the GPS_Transmit node
