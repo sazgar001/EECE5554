@@ -98,7 +98,7 @@ if __name__ == '__main__':  # starting if statemnt
     try:
         rospy.init_node('GPS Transmitter', anonymous=True)  # Start a new ROS node named 'GPS Transmitter'.
         serial_port_addr = rospy.get_param('~serial_port', '/dev/pts/0')  # Get the serial port address from ROS params or use default.
-        gps_publisher = rospy.Publisher('GPS_Reader', Customgps, queue_size=10)  # Set up a publisher for the GPS data.
+        gps_publisher = rospy.Publisher('/gps', Customgps, queue_size=10)  # Set up a publisher for the GPS data.
         read_from_serial(serial_port_addr)  # Read data from the serial port and publish it.
     except rospy.ROSInterruptException:  # Catch the exception if ROS is interrupted (e.g., shutdown).
         pass  # Do nothing if an interrupt exception occurs.
