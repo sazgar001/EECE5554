@@ -1,0 +1,10 @@
+<launch>
+    <!-- Define a parameter for the serial port -->
+    <arg name="port" default="/dev/pts/0"/>
+
+    <!-- Launch the vn_driver node -->
+    <node pkg="vn_driver" type="driver.py" name="vn_driver_node" output="screen">
+        <param name="port" value="$(arg port)"/>
+    </node>
+</launch>
+
