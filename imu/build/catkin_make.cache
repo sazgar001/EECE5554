@@ -1,2 +1,0 @@
-vn_driver
--DCATKIN_DEVEL_PREFIX=/home/sakib/imu/devel -DCMAKE_INSTALL_PREFIX=/home/sakib/imu/install -G Unix Makefiles
